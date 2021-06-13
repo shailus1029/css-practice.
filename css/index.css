@@ -107,6 +107,12 @@ input[type="text"]{
     margin-bottom: 10%;
 }
 
+.remember-me {
+	width: 82%;
+    color: white;
+    margin-top: 2%;
+}
+
 .login-button {
 	width: 130px;
     height: 60px;
