@@ -1,0 +1,123 @@
+body,
+button,
+input,
+textarea {
+	color: black;
+	font-family: "Asap", sans-serif;
+	font-size: 16px;
+	line-height: 1.8;
+}
+
+body {
+	background-color: #ededed;
+	margin: 0;
+	font-family: "Asap", sans-serif;
+}
+
+img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.body-center {
+	width: 100%;
+	background-image: url("../images/Login-bg.png");
+	background-repeat: round;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@media screen and (max-width: 768px) {
+	.body-center {
+		height: 100vh;
+	}
+}
+
+.login-container {
+	min-height: 500px;
+	width: 35%;
+	background-color: #9900ec;
+	border-radius: 40px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 7%;
+    margin-bottom: 7%;
+}
+
+@media screen and (max-width: 450px) {
+	.login-container {
+		width: 60%;
+	}
+}
+
+@media screen and (max-width: 360px) {
+	.login-container {
+		width: 80%;
+	}
+}
+
+.login-logo {
+	height: 100px;
+	width: 100px;
+	margin-top: 10%;
+}
+
+.heading {
+	margin-top: 5%;
+	font-size: 24px;
+	color: #ffffff;
+	text-align: center;
+}
+
+.username {
+	margin-top: 20%;
+	width: 80%;
+}
+
+.user-field, .password-field {
+	border: 0;
+	padding: 7px 0;
+	border-bottom: 1px solid #ccc;
+}
+
+input[type="text"]{ 
+	font: 15px/24px "Lato", Arial, sans-serif;
+	color: #ffffff;
+	width: 100%;
+	box-sizing: border-box;
+	letter-spacing: 1px;
+	background-color: #9900ec;
+}
+
+::placeholder { 
+	color: #ffffff;
+	opacity: 1;
+}
+
+.password {
+	margin-top: 10%;
+	width: 80%;
+}
+
+.btn-container {
+	margin-top: 6%;
+    margin-bottom: 10%;
+}
+
+.login-button {
+	width: 130px;
+    height: 60px;
+    border: none;
+	border-radius: 35px;
+	font: 16px/24px "Lato", Arial, sans-serif;
+	cursor: pointer;
+}
+
+.forgot-password {
+	margin-top: 5%;
+    margin-bottom: 15%;
+    color: #ffffff;
+}

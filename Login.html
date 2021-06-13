@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>Login Page</title>
+	<link href="https://fonts.googleapis.com/css?family=Asap:400,500,700|Inconsolata:400,700" rel="stylesheet" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.9/css/all.css"
+		integrity="sha384-5SOiIsAziJl6AWe0HWRKTXlfcSHKmYV4RBF18PPJ173Kzn7jzMyFuTtk8JA7QQG1" crossorigin="anonymous" />
+	<link rel="stylesheet" href="css/login.css" type="text/css" media="all" />
+</head>
+
+<body>
+	<div class="outer-wrap">
+		<div class="body-center">
+			<div class="login-container">
+				<div class="login-logo">
+					<img src="images/Logo.png" alt="logo" />
+					<p class="heading">LOG IN</p>
+				</div>
+				<div class="username">
+					<input class="user-field" type="text" placeholder="Username">
+					<span class="focus-border"></span>
+				</div>
+				<div class="password">
+					<input class="password-field" type="text" placeholder="Password">
+				</div>
+				<div class="remember-me">
+					<input type="checkbox" /> Remember Me
+				</div>
+				<div class="btn-container">
+					<button id="myButton" class="login-button">Login</button>
+				</div>
+				<div class="forgot-password">
+					Forgot password
+				</div>
+			</div>
+		</div>
+	</div>
+	<script type="text/javascript">
+		document.getElementById("myButton").onclick = function () {
+			location.href = "Landing.html";
+		};
+	</script>
+</body>
+
+</html>
