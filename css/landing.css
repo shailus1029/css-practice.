@@ -20,6 +20,10 @@ img {
 	height: auto;
 }
 
+input:focus, textarea:focus, select:focus{
+	outline: none;
+}
+
 header {
 	background-color: #ffffff;
     height: 70px;
@@ -105,33 +109,6 @@ header {
     cursor: pointer;
 }
 
-@media screen and (min-width: 451px) and (max-width: 768px) {
-    .main-menu {
-        width: 60%;
-    }
-    .logo-img {
-        padding-left: 50px;
-    }
-}
-
-@media screen and (max-width: 450px) {
-    .logo {
-        display: none;
-    }
-    .main-menu {
-        width: 70%;
-    }
-    .user-info {
-        width: 30%;
-    }
-    .main-menu ul a {
-        font-size: 11px;
-    }
-    .user-name {
-        font-size: 11px;
-    }
-}
-
 .landing-body {
     width: 100%;
 	display: flex;
@@ -152,8 +129,7 @@ header {
 .main-heading {
     display: flex;
     flex-direction: column;
-    margin-top: 15%;
-    margin-left: 10%;
+    margin: 15% 0 0 10%;
 }
 
 .heading-1 {
@@ -190,19 +166,16 @@ header {
     text-align: center;
     font-size: 35px;
     font-weight: 100;
-    margin-top: 0;
-    margin-bottom: 0;
+    margin: 0;
 }
 
 .testimonial-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 10%;
-    padding-right: 10%;
-    margin-top: 2%;
-    margin-bottom: 2%;
     flex-wrap: wrap;
+    padding: 0 10%;
+    margin: 2% 0;
 }
 
 .card {
@@ -223,10 +196,9 @@ header {
 }
 
 .text {
-    padding: 20px;
-    padding-top: 0px;
     display: flex;
     flex-direction: column;
+    padding: 0 20px 20px 20px;
 }
 
 .rating-div {
@@ -257,10 +229,8 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 10%;
-    padding-right: 10%;
-    margin-top: 2%;
-    margin-bottom: 2%;
+    padding: 0 10%;
+    margin: 2% 0;
     flex-wrap: wrap;
 }
 
@@ -309,25 +279,6 @@ header {
     font-size: 24px;
     color: #ffffff;
     font-weight: 500;
-}
-
-@media screen and (max-width: 768px) {
-    .testimonial-wrapper {
-        justify-content: center;
-    }
-
-    .card {
-        margin-bottom: 10%;
-    }
-
-    .left-card, .right-card {
-        margin-top: 2%;
-        min-width: 350px;
-    }
-
-    .right-card {
-        margin-left: 0%;
-    }
 }
 
 .blog {
@@ -383,38 +334,70 @@ header {
     margin-top: 10%;
 }
 
+@media screen and (max-width: 768px) {
+    .testimonial-wrapper {
+        justify-content: center;
+    }
+    .card {
+        margin-bottom: 10%;
+    }
+    .left-card, .right-card {
+        margin-top: 2%;
+        min-width: 350px;
+    }
+    .right-card {
+        margin-left: 0%;
+    }
+}
+
+@media screen and (min-width: 451px) and (max-width: 768px) {
+    .main-menu {
+        width: 60%;
+    }
+    .logo-img {
+        padding-left: 50px;
+    }
+}
 
 @media screen and (max-width: 450px) {
+    .logo {
+        display: none;
+    }
+    .main-menu {
+        width: 70%;
+    }
+    .user-info {
+        width: 30%;
+    }
+    .main-menu ul a {
+        font-size: 11px;
+    }
+    .user-name {
+        font-size: 11px;
+    }
     .blog-heading {
         font-size: 16px;
     }
-
     .author {
         margin-top: 5%;
     }
-
     .blog-details {
         width: 190px;
         font-size: 11px;
         opacity: 0.7;
     }
-
     .blog-details-left {
         font-size: 12px;
     }
-
     .bottom-heading {
         font-size: 26px;
     }
-
     .testimonial_heading {
         font-size: 26px;
     }
-
     .heading-1 {
         font-size: 35px;
     }
-    
     .sub-text {
         font-size: 14px;
     }
